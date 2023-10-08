@@ -1,13 +1,13 @@
 import { GiPartyPopper } from 'react-icons/gi';
 import { TbDiscountCheckFilled } from 'react-icons/tb';
+import { Link } from 'react-router-dom';
 
 const EventCard = ({ events }) => {
     //id, titile, , price, short_description
-    const {img,title,short_description,price} = events;
+    const {id,img,title,short_description,price} = events;
     return (
-        <div>
-            
-            <div className="card w-96 bg-base-100 shadow-2xl shadow-rose-400">
+        <div>         
+            <div className="card w-96 bg-base-100 shadow-xl shadow-pink-400">
                 <figure><img className="h-48 w-[85%] rounded" src={img} alt="Event-img" /></figure>
                 <div className="card-body">
                     <div className=" flex items-center justify-center gap-3 text-xl font-bold">
@@ -21,7 +21,9 @@ const EventCard = ({ events }) => {
                      <p className='font-semibold'>Price: {price}</p></div>
                          <div className="card-actions justify-end flex-row-reverse">
                          
-                         <button className="btn rounded-lg p-2 bg-rose-400 text-sm text-white">Service Details</button>
+                         <Link to={`/serviceDetails/${id}`}>
+                            <button className="btn rounded-lg p-2 bg-rose-400 text-sm text-white">Service Details</button>
+                         </Link>
                     </div>
                     </div>
                 </div>

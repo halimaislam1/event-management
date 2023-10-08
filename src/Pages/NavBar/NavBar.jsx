@@ -1,11 +1,9 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     const navLink = <>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/Aabout'>About</NavLink></li>
-        <li><NavLink to='/career'>details</NavLink></li>
     </>
 
     return (
@@ -38,9 +36,3 @@ const NavBar = () => {
 export default NavBar;
 
 
-//https://i.ibb.co/3Yycjvk/Event-Logo.jpg
-// https://i.ibb.co/KKqfgyC/event-manage-logo.jpg
-//https://i.ibb.co/sqdT5TF/event-pic.jpg
-//https://i.ibb.co/qDpGwcj/creative-logo.jpg
-//{/* <img className=' w-40 ' src="https://i.ibb.co/fCKYkyt/logo3.png" alt="logo" />  */}
-/* <img className='w-36 h-36 rounded-full' src="https://i.ibb.co/KKqfgyC/event-manage-logo.jpg" alt="logo" /> */
