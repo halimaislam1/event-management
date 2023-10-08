@@ -1,0 +1,45 @@
+   [
+      {
+        "id": 1,
+        "title": "Elegant Wedding Venue",
+        "img": "https://i.ibb.co/zXndhjw/weeding1.jpg",
+        "price": 50000.00,
+        "short_description": " Experience your dream wedding in this exquisite venue, adorned with timeless decor and offering impeccable service.  Create lasting memories in an elegant setting that will leave you and your guests enchanted."
+      },
+      {
+        "id": 2,
+        "title": "Birthday Party Decorations",
+        "img": "https://i.ibb.co/NTTyGRb/Birthday-Party-planner.jpg",
+        "price": 20000.00,
+        "short_description": " Elevate your celebration with vibrant decorations, balloons, and themed tableware. Create unforgettable birthday memories with our party essentials, perfect for any age or theme."
+      },
+      {
+        "id": 3,
+        "title": "Anniversary Dinner Package",
+        "img": "https://i.ibb.co/LxwgLgk/Anneversery.jpg",
+        "price": 15000.00,
+        "short_description": "Make your anniversary memorable with our romantic dinner package. Enjoy an intimate evening at a cozy restaurant, savoring a gourmet meal in an enchanting atmosphere. Celebrate your special day"
+      },
+      {
+        "id": 4,
+        "title": "Engagement Party Catering",
+        "img": "https://i.ibb.co/vmWNY8V/Engagement.jpg",
+        "price": 25000.00,
+        "short_description": "Delight your guests with our exquisite catering services for your engagement party. We offer a diverse menu of delectable dishes prepared with the finest ingredients, ensuring a culinary experience that matches the significance of your celebration."
+      },
+      {
+        "id": 5,
+        "title": "Retirement Party Decoration",
+        "img": "https://i.ibb.co/tXtc9Tq/Retirement.jpg",
+        "price": 10000.00,
+        "short_description": " Keep the energy high at your retirement party with our professional DJ services. Our skilled DJs will curate the perfect playlist like song, music etc. We will  creating a memorable celebration as you embark on the next chapter of your life. "
+      },
+      {
+        "id": 6,
+        "title": "Baby Shower Party Pakage",
+        "img": "https://i.ibb.co/fqfLsp4/Baby-shower.jpg",
+        "price": 15000.00,
+        "short_description": "Surprise the mom-to-be with our thoughtful gift set, carefully crafted to make her baby shower extra special. Our set includes adorable baby essentials, soothing items for both baby and mom, and charming keepsakes."
+      }
+    ]
+  
