@@ -27,7 +27,8 @@ const Home = () => {
                      <EventsCard key= {event.id}
                      events = {event}></EventsCard>)
                  }
-            </div>        
+            </div> 
+            <Reviews></Reviews>       
         </div>
     );
 };
