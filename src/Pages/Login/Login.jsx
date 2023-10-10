@@ -1,9 +1,71 @@
-import { Link } from 'react-router-dom';
-import NavBar from '../NavBar/NavBar';
+import { useContext } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import AuthProvider, { AuthContext } from '../../Providers/AuthProvider';
+import swal from 'sweetalert';
+import { FcGoogle } from 'react-icons/fc';
+import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
+import app from '../../Firebase/firebase.config';
+// const auth = getAuth(app);
+
 
 const Login = () => {
+    const { login ,loginWithGoogle} = useContext(AuthContext)
+    const location = useLocation()
+    const navigate = useNavigate()
+    console.log('login page location:', location);
+     
+
+    const handleLogin = e => {
+        e.preventDefault();
+        console.log(e.currentTarget);
+        const form = new FormData(e.currentTarget);
+        const email = form.get('email')
+        const password = form.get('password')
+        console.log(email, password);
+
+        if (password.length < 6) {
+            swal('Password should be at least 6 charecters')
+            return;
+        } else if (!/[A-Z]/.test(password)) {
+            swal('Password should be at least one uppercase')
+            return;
+        } else if (!/[#?!@$%^&*-]/.test(password)) {
+            swal('Password should be at least one special charecter')
+            return;
+        }
+
+        login(email, password)
+            .then(result => {
+                console.log(result.user);
+                swal({
+                    text: "login successful",
+                    timer: 1000
+               })
+
+                navigate(location?.state ? location.state : '/')
+            })
+
+            .catch(error => {
+                console.error(error);
+                swal({
+                    text: "Invalid mail or password,please try again",
+                    timer: 4000
+                })
+            })
+    }
+      const handleGoogleSignIn = () => {
+        loginWithGoogle()
+        .then(result => {
+            console.log( result.user)
+            navigate(location?.state ? location.state : '/')
+        })
+        .catch(error=>console.error(error))
+       }
+
     return (
+
         <div className='mb-20'>
+        
             <div className=" ">
                 <div className="hero-content flex-col ">
                     <div className="text-center ">
@@ -11,13 +73,13 @@ const Login = () => {
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-md  bg-base-500">
                         <div className="card-body bg-fuchsia-100 rounded-xl">
-                            {/* onSubmit={handleLogin} */}
-                            <form >
+
+                            <form onSubmit={handleLogin}>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text text-purple-700">Email</span>
                                     </label>
-                                    <input  type="email" name='email' placeholder="Enter your email" className="input input-bordered text-sm
+                                    <input type="email" name='email' placeholder="Enter your email" className="input input-bordered text-sm
                                 border border-fuchsia-700 " required />
                                 </div>
                                 <div className="form-control">
@@ -28,6 +90,7 @@ const Login = () => {
                                     <label className="label">
                                         <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                     </label>
+
                                 </div>
                                 <div className="form-control mt-3">
                                     <button className="btn text-white bg-fuchsia-900 font-semibold 
@@ -39,7 +102,10 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+            <button  onClick={handleGoogleSignIn}  className='flex items-center btn-outline p-4 bg-slate-300 mx-auto'><FcGoogle></FcGoogle>Login with google</button>
+            
         </div>
+        
     );
 };
 

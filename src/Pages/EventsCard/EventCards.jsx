@@ -3,10 +3,9 @@ import { TbDiscountCheckFilled } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
 
 const EventCard = ({ events }) => {
-    //id, titile, , price, short_description
     const {id,img,title,short_description,price} = events;
     return (
-        <div>         
+        <div data-aos="fade-up" >         
             <div className="card w-96 bg-base-100 shadow-xl shadow-pink-400">
                 <figure><img className="h-48 w-[85%] rounded" src={img} alt="Event-img" /></figure>
                 <div className="card-body">

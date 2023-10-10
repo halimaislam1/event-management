@@ -2,7 +2,7 @@ import React from 'react';
 
 const Reviews = () => {
     return (
-        <div>
+        <div >
             <h1 className='mt-20 text-3xl text-center font-bold'>Our Event Managent reviews</h1>
             <div className='mt-5  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
 
@@ -13,7 +13,7 @@ const Reviews = () => {
                     <p className='text-center mb-2 '>Reviws</p>
                     <div className="rating gap-1 mb-3 flex justify-center">
                         <input type="radio" name="rating-3" className="mask mask-heart bg-red-400" />
-                        <input type="radio" name="rating-3" className="mask mask-heart bg-orange-400" checked />
+                        <input type="radio" name="rating-3" className="mask mask-heart bg-orange-400" />
                         <input type="radio" name="rating-3" className="mask mask-heart bg-yellow-400" />
                         <input type="radio" name="rating-3" className="mask mask-heart bg-lime-400" />
                         <input type="radio" name="rating-3" className="mask mask-heart bg-green-400" />
@@ -27,7 +27,7 @@ const Reviews = () => {
                     <p className='text-center mb-1 '>Reviws</p>
                     <div className="rating gap-1 mb-3 flex justify-center">
                         <input type="radio" name="rating-3" className="mask mask-heart bg-red-400" />
-                        <input type="radio" name="rating-3" className="mask mask-heart bg-orange-400" checked />
+                        <input type="radio" name="rating-3" className="mask mask-heart bg-orange-400" />
                         <input type="radio" name="rating-3" className="mask mask-heart bg-yellow-400" />
                         <input type="radio" name="rating-3" className="mask mask-heart bg-lime-400" />
                         <input type="radio" name="rating-3" className="mask mask-heart bg-green-400" />
@@ -40,7 +40,7 @@ const Reviews = () => {
                     <p className='text-center mb-1 '>Reviws</p>
                     <div className="rating gap-1 mb-3 flex justify-center">
                         <input type="radio" name="rating-3" className="mask mask-heart bg-red-400" />
-                        <input type="radio" name="rating-3" className="mask mask-heart bg-orange-400" checked />
+                        <input type="radio" name="rating-3" className="mask mask-heart bg-orange-400"  />
                         <input type="radio" name="rating-3" className="mask mask-heart bg-yellow-400" />
                         <input type="radio" name="rating-3" className="mask mask-heart bg-lime-400" />
                         <input type="radio" name="rating-3" className="mask mask-heart bg-green-400" />
