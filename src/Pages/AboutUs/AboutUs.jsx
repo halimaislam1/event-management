@@ -5,7 +5,7 @@ import { FaLinkedinIn } from 'react-icons/fa';
 
 const AboutUs = () => {
     return (
-        <div>
+        <div data-aos="fade-up">
             <div style={{backgroundImage:"url(https://i.ibb.co/wzCKG5Z/Extra-bg-banner2.jpg)"}}>
             <div className="card lg:flex-row-reverse mb-10 mt-10  " >
                 <figure><img src="https://i.ibb.co/DW6dhdg/extra-route-banner.jpg" alt="Album" /></figure>

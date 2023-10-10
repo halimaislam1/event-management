@@ -1,7 +1,6 @@
-
 import toast, { Toaster } from 'react-hot-toast';
 import { useContext,  } from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link,  useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
 import swal from 'sweetalert';
 import { updateProfile } from 'firebase/auth';

@@ -1,11 +1,8 @@
 import { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import AuthProvider, { AuthContext } from '../../Providers/AuthProvider';
+import { AuthContext } from '../../Providers/AuthProvider';
 import swal from 'sweetalert';
 import { FcGoogle } from 'react-icons/fc';
-import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
-import app from '../../Firebase/firebase.config';
-// const auth = getAuth(app);
 
 
 const Login = () => {

@@ -1,5 +1,4 @@
 import React from 'react';
-// import AboutUs from '../AboutUs/AboutUs';
 import { BsFacebook } from 'react-icons/bs';
 import { FaInstagramSquare } from 'react-icons/fa';
 import { BsTwitter } from 'react-icons/bs';
@@ -29,7 +28,7 @@ const Team = () => {
                 <p className='text-sm md:text-normal'>agent</p>   
             </div>
             </div>
-            {/* 2 */}
+        
             <div className='flex justify-around gap-6 mt-12 mb-10 ml-6'>
             <div>
                 <img className='w-[70%] rounded' src="https://i.ibb.co/y5gBbxs/team-4.jpg" alt="" />

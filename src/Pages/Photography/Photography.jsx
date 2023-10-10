@@ -3,7 +3,6 @@ import Marquee from "react-fast-marquee";
 const Photography = () => {
     return (
         <div className='mt-28 mb-10'>
-            {/* <img className='mx-auto w-[1/3] ' src="https://i.ibb.co/dKxZr2v/image555.jpg" alt="" /> */}
             <img className='mx-auto bg-pink-100 ' src="https://i.ibb.co/D4HVkFD/Photography-logo-removebg-preview.png" alt="" />
             <h1 className='text-5xl text-center font-bold text-red-400 mb-12 '>Our Event Photography</h1>
             <Marquee pauseOnHover={true} speed={50} >
@@ -18,7 +17,7 @@ const Photography = () => {
                         </div>
                     </div>
                 </div>
-                {/* no-2 */}
+                
                 <div className="mr-16">
                     <div className="card rounded-lg mb-5  w-72 bg-base-100 shadow-lg shadow-red-500">
                         <figure><img className="w-[65%] " src="https://i.ibb.co/DVxdzxJ/birthday-1.jpg" alt="Shoes" /></figure>
@@ -30,7 +29,7 @@ const Photography = () => {
                         </div>
                     </div>
                 </div>
-                {/* no-3 */}
+               
                 <div className="mr-16">
                     <div className="card rounded-lg mb-5  w-72 bg-base-100 shadow-lg shadow-red-500">
                         <figure><img className="w-[100%]" src="https://i.ibb.co/LxwgLgk/Anneversery.jpg" alt="Shoes" /></figure>
@@ -42,7 +41,7 @@ const Photography = () => {
                         </div>
                     </div>
                 </div>
-                {/* no-4 */}
+               
                 <div className="mr-16">
                     <div className="card rounded-lg mb-5  w-72 bg-base-100 shadow-lg shadow-red-500">
                         <figure><img className="w-[100%]" src="https://i.ibb.co/vmWNY8V/Engagement.jpg" alt="Shoes" /></figure>
@@ -54,7 +53,7 @@ const Photography = () => {
                         </div>
                     </div>
                 </div>
-                {/* No-5 */}
+                
                 <div className="mr-16 ">
                     <div className="card rounded-lg mb-5  w-72 bg-base-100 shadow-lg shadow-red-500">
                         <figure><img className="w-[100%]" src="https://i.ibb.co/fqfLsp4/Baby-shower.jpg" alt="Shoes" /></figure>
