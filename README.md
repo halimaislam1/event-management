@@ -1,6 +1,6 @@
 # Social-Event-Management
 
-### live link: https://social-event-management-d389a.web.app
+### live link:  https://social-event-management-d389a.web.app
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
