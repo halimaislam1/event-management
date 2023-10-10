@@ -20,7 +20,7 @@ console.log(greetign);
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>Here greetign is a variable ,this variable assign empty object and console it.thats whay answer is `A` </i>
 
 </p>
 </details>
@@ -45,7 +45,8 @@ sum(1, "2");
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>Here sum is a function which take two parameter is called a, b
+and return with concation .when sum function is called it takes two aurgument one is number and other is string .thats why correct answer is `C`</i>
 
 </p>
 </details>
@@ -71,7 +72,7 @@ console.log(food);
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>Here food is a variable which assign an array .when i console food variabe it give me an array.so, the correct answer is `A`</i>
 
 </p>
 </details>
@@ -96,7 +97,7 @@ console.log(sayHi());
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>Here sayHi is a function which take parameter as name.when i called this function without argument it returns hi there but cannt find name because argument is not defined.thats why correct answer is `B` </i>
 
 </p>
 </details>
@@ -124,7 +125,8 @@ console.log(count);
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>Here count variable assigned a number and nums variable assigned an array 
+nums.forEach loop chacks if the number is not equal 0 then return increment variable by 1 and console it .so here 1,2, 3 numbers are not equal 0 .thats why answer is `C` </i>
 
 </p>
 </details>
