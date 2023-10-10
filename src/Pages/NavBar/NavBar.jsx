@@ -18,6 +18,7 @@ const NavBar = () => {
     const navLink = <>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/about'>About</NavLink></li>
+        <li><NavLink to='/team'>Team</NavLink></li>
     </>
 
     return (
@@ -43,7 +44,8 @@ const NavBar = () => {
                 
                 {
                     user ? 
-                    <div className='flex items-center justify-center '>
+                    <div className='flex items-center justify-center gap-3 '>
+                        <p>{user.displayName}</p>
                         <img className='w-14 h-14 rounded-full' src={user.photoURL} alt="" />
                         <button onClick={handleSignOut} className="btn bg-black text-white">sign Out</button>
                     </div>

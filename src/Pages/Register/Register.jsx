@@ -42,11 +42,11 @@ const Register = () => {
             displayName: name, photoURL: photourl
           }).then(() => {
             navigate(location?.state?location.state :'/')
-            // window.location.reload();
+            
           }).catch(() => {
             
           });
-        
+        //  window.location.reload();
     })
     .catch(error => {
         console.error(error)

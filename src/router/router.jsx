@@ -7,7 +7,8 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
 import AboutUs from "../Pages/AboutUs/AboutUs";
-// import PrivateRoute from "./PrivateRoute";
+import Team from "../Pages/Team/Team";
+
 
 const router = createBrowserRouter([
     {
@@ -35,7 +36,11 @@ const router = createBrowserRouter([
         },
         {
           path:'/about',
-          element:<AboutUs></AboutUs>
+          element:<PrivateRoute><AboutUs></AboutUs></PrivateRoute>
+        },
+        {
+          path:'/Team',
+          element:<PrivateRoute><Team></Team></PrivateRoute>
         },
       ]
     },
